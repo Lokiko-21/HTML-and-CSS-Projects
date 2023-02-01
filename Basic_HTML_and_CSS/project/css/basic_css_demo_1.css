@@ -1,0 +1,30 @@
+body {
+    background-color: #fff;
+}
+
+h1 {
+    color: rgba(8, 141, 165, 1);
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* ----------------------------------------------------------------------------
+    SELECT ALL SQUARES IN THE ARRAY
+-----------------------------------------------------------------------------*/
+.container .squares:nth-child(-n+4) {
+    background-image: url("..images/icons/smileyface2.jpg");
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+}
