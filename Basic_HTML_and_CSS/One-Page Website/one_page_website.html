@@ -4,6 +4,7 @@
     <title>DESQUE</title>
     <meta charset="utf-8">
     <link href="./css/one_page_website.css" rel="stylesheet">
+    <script src="JS/one_page_website.js"></script>
   </head>
 
   <!--Start of my content-->
@@ -49,132 +50,76 @@
       <div id="gallery">
         <h3>Pictures from us and our customers!</h3>
         <div>
-
-          <!--Photo Container 1-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_1.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
+          <!--OPENING LIGHTBOX-->
+          <div class="row">
+            <div class="column">
+              <img src="images/thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="images/thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="images/thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="images/thumb/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
             </div>
           </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 2-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_2.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
+          
+          <!--MODAL/LIGHTBOX-->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/lightbox/thumb_1.jpg" style="width:100%">
               </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/lightbox/thumb_2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/lightbox/thumb_3.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/lightbox/thumb_4.jpg" style="width:100%">
+              </div>
+          
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="images/thumb/thumb_1.jpg" onclick="currentSlide(1)" alt="Corner Desk">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/thumb/thumb_2.jpg" onclick="currentSlide(2)" alt="Mounted Desk">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/thumb/thumb_3.jpg" onclick="currentSlide(3)" alt="office wood desk">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/thumb/thumb_4.jpg" onclick="currentSlide(4)" alt="white corner desk">
+              </div>
+
             </div>
           </div>
-          <!--End of photo container-->
 
-          <!--Photo Container 3-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_3.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 4-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_4.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 5-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_5.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 6-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_6.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 7-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_7.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 8-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_8.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
-
-          <!--Photo Container 9-->
-          <div>
-            <div>
-              <img src="images/thumb/thumb_9.jpg" alt="">
-              <div class="photo">
-                <p>
-                  We have a variety of different desks, find one that
-                  is right for you!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--End of photo container-->
         </div>
     </section>
     <!--End of gallery-->
