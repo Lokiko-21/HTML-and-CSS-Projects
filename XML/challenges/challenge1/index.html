@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <title>XML Challenge 1</title>
+        <meta charset="utf-8">
+    </head>
+
+
+    <body>
+
+        <p id="example"></p>
+
+        <script>
+
+            var familyMember = "<family_member>" +
+                "<name>Marco</name>" +
+                "<age>20</age>" +
+                "<gender>Male</gender>" +
+                "<job>Dishwasher Technician</job>" +
+                "</family_member>";
+
+            //CREATES AN XML DOM PARSER
+            XML_Parser = new DOMParser();
+
+            //CREATES NEW XML DOM OBJECT USING THE TEXT STRING
+            XML_Document = XML_Parser.parseFromString(familyMember, "text/xml");
+
+            document.getElementById("example").innerHTML = XML_Document.getElementsByTagName("job")[0].childNodes[0].nodeValue;
+
+        </script>
+
+
+    </body>
+
+
+</html>
