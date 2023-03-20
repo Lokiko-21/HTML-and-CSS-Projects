@@ -1,7 +1,7 @@
-function formValidation() {
-    let a = document.forms["myForm"]["number"].value;
-    if (a == "") {
-        alert("Please fill out the Phone Number Section");
-        return false;
-    }
+function openForm() {
+    document.getElementById("my-form").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("my-form").style.display = "none";
 }
