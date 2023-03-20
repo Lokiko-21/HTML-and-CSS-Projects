@@ -1,0 +1,13 @@
+h1 {
+    font-size: 1.1vw;
+}
+
+p {
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
