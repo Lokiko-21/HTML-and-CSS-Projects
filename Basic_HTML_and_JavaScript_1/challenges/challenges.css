@@ -71,3 +71,14 @@ p {
 .formContainer .btn:hover, .openButton:hover {
     opacity: 1;
 }
+
+.zoom {
+    padding: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
