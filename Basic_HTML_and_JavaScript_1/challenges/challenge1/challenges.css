@@ -23,6 +23,8 @@ p {
     border: none;
     cursor: pointer;
     opacity: .8;
+    position: -webkit-sticky;
+    position: sticky;
     position: fixed;
     bottom: 23px;
     right: 28px;
