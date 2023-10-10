@@ -1,0 +1,42 @@
+.tea-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tea-card {
+    flex: 1 1 calc(33% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.tea-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.tea-card h3 {
+    margin-top: 10px;
+}
+
+.tea-card p {
+    margin: 10px 0;
+}
+
+.tea-card button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tea-card button:hover {
+    background-color: #0056b3;
+}
