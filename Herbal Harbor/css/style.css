@@ -1,4 +1,4 @@
-/* Header Styles */
+/* HEADER STYLES */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,9 @@
     font-size: 20px;
 }
 
-/*PRODUCT CARDS*/
+/* HOME CARDS */
+
+/* PRODUCT CARDS */
 .tea-container {
     display: flex;
     flex-wrap: wrap;
@@ -84,4 +86,44 @@
 
 .tea-card button:hover {
     background-color: #0056b3;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #6b8e23;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
 }
