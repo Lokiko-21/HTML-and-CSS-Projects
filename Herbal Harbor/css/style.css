@@ -43,6 +43,12 @@
 }
 
 /* HOME CARDS */
+.home-featured h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .home-about h2 {
     text-align: center;
     width: 100%;
