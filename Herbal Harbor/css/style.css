@@ -1,10 +1,15 @@
+body {
+    font-family: 'Roboto', cursive;
+    background-color: #ffffcc;
+}
+
 /* HEADER STYLES */
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f8f8; /* Light gray background color */
+    background-color: #c8e6c9;
 }
 
 .company-name {
@@ -45,12 +50,16 @@
 /* HOME CARDS */
 .home-featured h2 {
     text-align: center;
+    text-decoration: underline;
+    color: #3a5a40;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .home-about h2 {
     text-align: center;
+    text-decoration: underline;
+    color: #3a5a40;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -71,15 +80,42 @@
 }
 
 .home-card h3 {
+    text-decoration: underline;
+    color: #3a5a40;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 .home-card p {
+    color: #3a5a40;
     font-size: 1.5em;
 }
 
 /* PRODUCT CARDS */
+.product-popular h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-seasonal h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-herbal h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-milk h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .tea-container {
     display: flex;
     flex-wrap: wrap;
@@ -93,8 +129,9 @@
     padding: 10px;
     text-align: center;
     margin: 10px;
-    max-width: 300px;
+    max-width: 25%;
     box-sizing: border-box;
+    background-color: #c8e6c9;
 }
 
 .tea-card img {
@@ -103,24 +140,32 @@
 }
 
 .tea-card h3 {
+    text-decoration: underline;
+    color: #3a5a40;
     margin-top: 10px;
+    font-size: 2em;
 }
 
 .tea-card p {
+    color: #3a5a40;
     margin: 10px 0;
+    font-size: 1.2em;
 }
 
 .tea-card button {
-    background-color: #007bff;
-    color: #fff;
+    font-size: 1.1em;
+    background-color: #ffffcc;
+    color: #3a5a40;
     padding: 5px 10px;
+    width: 50%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .tea-card button:hover {
-    background-color: #0056b3;
+    background-color: #3a5a40;
+    color: #ffffcc;
 }
 
 /* FOOTER STYLES */
