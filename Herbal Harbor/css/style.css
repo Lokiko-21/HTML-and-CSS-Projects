@@ -33,7 +33,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 .nav-container ul li {
@@ -44,8 +43,22 @@ body {
 .nav-container ul li a {
     text-decoration: none;
     color: #3a5a40;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
     font-weight: bold;
     font-size: 20px;
+}
+
+.nav-container ul li a:hover {
+    background-color: #3a5a40;
+    color: #c8e6c9;
+}
+
+#cart-icon img{
+    height: 5em;
+    width: auto;
+    border-radius: 5px;
 }
 
 /* HOME CARDS */
@@ -360,4 +373,7 @@ a:hover {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+}
+.contact button:hover {
+    background-color: #e6e6b5;
 }
