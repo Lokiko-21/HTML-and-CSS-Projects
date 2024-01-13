@@ -14,7 +14,7 @@ document.querySelectorAll('.atc-button').forEach(button => {
 
 function updateCartIcon() {
     const cartIcon = document.getElementById('cart-icon');
-    cartIcon.innerHTML = '<img src="images/filled_cart.png" alt="Filled Shopping Cart Icon">';
+    cartIcon.innerHTML = '<img src="images/filled_cart.png" alt="Filled Shopping Cart Icon">' + cart.length;
 }
 
 document.getElementById('cart-icon').addEventListener('click', () => {
@@ -26,10 +26,10 @@ function displayCartContents() {
     cartContents.innerHTML = '';
 
     cart.forEach(item => {
-        cartContents.innerHTML += '<div>${item.name} - $${item.price}</div>';
+        cartContents.innerHTML += `<div>${item.name} - $${item.price}</div>`;
     })
 
-    cartContents.innerHTML += '<button id="checkout-button">Checkout</button>';
+    cartContents.innerHTML += '<button id="checkout-button">Proceed to Checkout</button>';
 
     document.getElementById('checkout-button').addEventListener('click', () => {
         checkout();
