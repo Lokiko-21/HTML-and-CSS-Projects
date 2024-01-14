@@ -1,42 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial scale-1.0">
-    <title>Contact</title>
-    <!--CSS STYLES GO HERE-->
-    <link rel="stylesheet" href="">
-</head>
+<section>
+    <h2>Contact Us!</h2>
+    <p>Discover amazing products and services.</p>
+    <!-- Add additional content specific to the home page here -->
+</section>
 
-
-<body>
-
-    <header>
-        <h1>Contact Us!</h1>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'products' %}">Products</a></li>
-                <li><a href="{% url 'faq' %}">FAQ</a></li>
-                <li><a href="{% url 'contact' %}">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        {% block content %}
-
-        {% endblock %}
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Marco's E-Commerce Website</p>
-    </footer>
-
-</body>
-
-
-</html>
+{% endblock %}
