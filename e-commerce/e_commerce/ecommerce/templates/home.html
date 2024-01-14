@@ -2,10 +2,12 @@
 
 {% block content %}
 
-<section>
-    <h2>Welcome to Marco's E-Commerce</h2>
-    <p>Discover amazing products and services.</p>
-    <!-- Add additional content specific to the home page here -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Marco's E-Commerce</h2>
+        <p>Discover amazing products and services</p>
+        <a href="{% url 'products' %}" class="btn">Explore Products</a>
+    </div>
 </section>
 
 {% endblock %}
